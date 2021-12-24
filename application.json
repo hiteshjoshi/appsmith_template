@@ -1,0 +1,15 @@
+{
+  "name": "MondaySmith",
+  "isPublic": false,
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#C7F3F0",
+  "icon": "basketball",
+  "slug": "mondaysmith",
+  "createdAt": {
+    "seconds": 1631787902,
+    "nanos": 506000000
+  },
+  "deleted": false
+}

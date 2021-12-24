@@ -1,0 +1,617 @@
+{
+  "unpublishedPage": {
+    "name": "Standup",
+    "slug": "standup",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 748,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1150,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 47,
+          "minHeight": 710,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "issue_number",
+                "is_epic",
+                "position",
+                "estimate"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "topRow": 2,
+              "bottomRow": 58,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.issue_number.computedValue"
+                },
+                {
+                  "key": "primaryColumns.is_epic.computedValue"
+                },
+                {
+                  "key": "primaryColumns.position.computedValue"
+                },
+                {
+                  "key": "primaryColumns.estimate.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "issue_number": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "issue_number",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "issue_number",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.issue_number))}}"
+                },
+                "is_epic": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "is_epic",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "is_epic",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.is_epic))}}"
+                },
+                "position": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "position",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "position",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.position))}}"
+                },
+                "estimate": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "estimate",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "estimate",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.estimate))}}"
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 63,
+              "textSize": "PARAGRAPH",
+              "widgetId": "l9omnj77bz",
+              "isVisibleFilters": true,
+              "tableData": "{{_.filter(PlatformPodBoards.data.pipelines,{name : \"Sprint Backlog\"})[0].issues\n}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Table2",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "issue_number",
+                "repo_id",
+                "issue_url"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "topRow": 58,
+              "bottomRow": 113,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.issue_number.computedValue"
+                },
+                {
+                  "key": "primaryColumns.repo_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.issue_url.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "issue_number": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "issue_number",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "issue_number",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.issue_number))}}"
+                },
+                "repo_id": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "repo_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "repo_id",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.repo_id))}}"
+                },
+                "issue_url": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "issue_url",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "issue_url",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.issue_url))}}"
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 63,
+              "textSize": "PARAGRAPH",
+              "widgetId": "hvfg909vx2",
+              "isVisibleFilters": true,
+              "tableData": "{{Api1.data.epic_issues}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "61431e1ea67ce2289d3c7c89",
+              "name": "Api1",
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "61431caea67ce2289d3c7c80",
+              "name": "PlatformPodBoards",
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "Table2",
+          "MainContainer",
+          "Table1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Standup",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "publishedPage": {
+    "name": "Standup",
+    "slug": "standup",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 748,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1150,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 47,
+          "minHeight": 710,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "issue_number",
+                "is_epic",
+                "position",
+                "estimate"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "topRow": 2,
+              "bottomRow": 58,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.issue_number.computedValue"
+                },
+                {
+                  "key": "primaryColumns.is_epic.computedValue"
+                },
+                {
+                  "key": "primaryColumns.position.computedValue"
+                },
+                {
+                  "key": "primaryColumns.estimate.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "issue_number": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "issue_number",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "issue_number",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.issue_number))}}"
+                },
+                "is_epic": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "is_epic",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "is_epic",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.is_epic))}}"
+                },
+                "position": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "position",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "position",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.position))}}"
+                },
+                "estimate": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "estimate",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "estimate",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.estimate))}}"
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 63,
+              "textSize": "PARAGRAPH",
+              "widgetId": "l9omnj77bz",
+              "isVisibleFilters": true,
+              "tableData": "{{_.filter(PlatformPodBoards.data.pipelines,{name : \"Sprint Backlog\"})[0].issues\n}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Table2",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "issue_number",
+                "repo_id",
+                "issue_url"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "topRow": 58,
+              "bottomRow": 113,
+              "parentRowSpace": 10,
+              "isSortable": true,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.issue_number.computedValue"
+                },
+                {
+                  "key": "primaryColumns.repo_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.issue_url.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "issue_number": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "issue_number",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "issue_number",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.issue_number))}}"
+                },
+                "repo_id": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "repo_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "repo_id",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.repo_id))}}"
+                },
+                "issue_url": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "issue_url",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "issue_url",
+                  "computedValue": "{{Table2.sanitizedTableData.map((currentRow) => ( currentRow.issue_url))}}"
+                }
+              },
+              "delimiter": ",",
+              "derivedColumns": {},
+              "rightColumn": 63,
+              "textSize": "PARAGRAPH",
+              "widgetId": "hvfg909vx2",
+              "isVisibleFilters": true,
+              "tableData": "{{Api1.data.epic_issues}}",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "61431e1ea67ce2289d3c7c89",
+              "name": "Api1",
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "61431caea67ce2289d3c7c80",
+              "name": "PlatformPodBoards",
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "Table2",
+          "MainContainer",
+          "Table1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Standup",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "policies": [],
+  "userPermissions": [
+    "read:pages",
+    "manage:pages"
+  ],
+  "gitSyncId": "61431b7ea67ce2289d3c7c7b_61c433ace89bc475f3cb9437"
+}
